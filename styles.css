@@ -17,8 +17,13 @@ a:active { color: #ca4700; text-decoration: underline; }
 
 /* center and pad story content */
 .bat_wrap{
+	position:relative;
 	width:90%;
 	margin:0 auto;
+}
+
+#bat_head{
+	display:none;
 }
 
 /*story headline*/
@@ -27,6 +32,7 @@ a:active { color: #ca4700; text-decoration: underline; }
 	font-weight:900;
 	font-size: 2.5em;
 	margin:.5em 0 0em 0;
+	line-height: .9em
 }
 
 /*story deck*/
@@ -194,6 +200,24 @@ footer{
 	.bat_wrap h1{
 		font-size: 5em;
 	}
+	
+		/* story head */
+	#bat_head {
+		display:block;
+		font-size:10em;
+		color:#fff;
+		position:absolute;
+		left:0;
+		bottom:0;
+		width:100%;
+		padding:0;
+	}
+	
+	#bat_head p{
+		margin:0;
+		padding:.3em;
+	}
+
 	
 	/*story deck*/
 	.bat_wrap h2{
