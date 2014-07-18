@@ -10,11 +10,9 @@ a:hover { color: #ca4700; text-decoration: underline; }
 
 a:active { color: #ca4700; text-decoration: underline; }
 
-/* for top image */
-.bat_top{
-	position:absolute;
-	height:25%;
-	top:0;
+/* paralax top image */
+.bat_paratop figcaption{
+	padding: 0 1em;
 }
 
 /* center and pad story content */
@@ -186,18 +184,6 @@ footer{
 /* screens greater that 980 px AKA: desktop */
 
 @media (min-width: 980px) {
-	
-	/* paralax top image */
-	.bat_paratop{
-		position:absolute;
-		height:90%;
-		margin:0 auto;
-	}
-	
-	/* paralax top image */
-	.bat_paratop figcaption{
-		padding: 0 1em;
-	}
 	
 	/* set max width */
 	.bat_wrap{
