@@ -194,6 +194,11 @@ footer{
 		margin:0 auto;
 	}
 	
+	/* paralax top image */
+	.bat_paratop figcaption{
+		padding: 0 1em;
+	}
+	
 	/* set max width */
 	.bat_wrap{
 		max-width:980px;
