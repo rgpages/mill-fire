@@ -23,7 +23,19 @@ a:active { color: #ca4700; text-decoration: underline; }
 }
 
 #bat_head{
-	display:none;
+	display:block;
+	color:#fff;
+	position:absolute;
+	left:0;
+	bottom:4em;
+	width:100%;
+	padding:0;
+}
+
+#bat_head p{
+	font-size:2.5em;
+	margin:0;
+	padding:.3em;
 }
 
 /*story headline*/
@@ -189,6 +201,20 @@ footer{
 
 /* screens greater that 980 px AKA: desktop */
 
+@media (min-width: 665px) {
+	
+	/* story head */
+	#bat_head {
+		bottom:2em;
+	}
+	
+	#bat_head p {
+		font-size:5em;
+	}
+}
+
+/* screens greater that 980 px AKA: desktop */
+
 @media (min-width: 980px) {
 	
 	/* set max width */
@@ -201,34 +227,22 @@ footer{
 		font-size: 5em;
 	}
 	
-		/* story head */
-	#bat_head {
-		display:block;
-		font-size:10em;
-		color:#fff;
-		position:absolute;
-		left:0;
-		bottom:0;
-		width:100%;
-		padding:0;
-	}
-	
-	#bat_head p{
-		margin:0;
-		padding:.3em;
-	}
-
-	
 	/*story deck*/
 	.bat_wrap h2{
 		font-size: 2.5em;
 	}
+	
+	/* story head */
+	#bat_head {
+		bottom:0;
+	}
+	
+	#bat_head p{
+		font-size:7.5em;
+	}
 
 	/* center up center image if there is a max-width*/
-	.bat_full{
-		/*margin:0 auto;
-		max-width: 1320px;*/
-	}
+	.bat_full{}
 	
 	/* story style */
 	.bat_story{
