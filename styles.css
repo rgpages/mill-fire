@@ -25,10 +25,19 @@ a:active { color: #ca4700; text-decoration: underline; }
 
 /*story headline*/
 .bat_wrap h1{
-	font-family: "MillerHeadlineBold", Cambria, Georgia, serif;
+	font-family: "MillerHeadline Bold", Cambria, Georgia, serif;
 	font-weight:900;
 	font-size: 2.5em;
-	margin:.5em 0 .5em 0;
+	margin:.5em 0 0em 0;
+}
+
+/*story deck*/
+.bat_wrap h2{
+	font-family: "MillerHeadline Light", Cambria, Georgia, serif;
+	color:#666;
+	font-weight:100;
+	font-size: 1.5em;
+	margin: 0em 0 .5em 0;
 }
 
 /* byline */
@@ -52,7 +61,7 @@ a:active { color: #ca4700; text-decoration: underline; }
 }
 
 /* sub heads */
-.bat_wrap h2{
+.bat_wrap h3{
 	font-family: "MillerHeadline Bold", Cambria, Georgia, serif;
 	font-size: 2em;
 	font-weight: 400;
@@ -89,7 +98,7 @@ figcaption{
 
 /* full-width caption style */
 .bat_full figcaption{
-	margin: 0;
+	padding:0 1em;
 }
 
 /* story content */
@@ -192,7 +201,12 @@ footer{
 
 	/* story head up font size */
 	.bat_wrap h1{
-		font-size: 3.5em;
+		font-size: 5em;
+	}
+	
+	/*story deck*/
+	.bat_wrap h2{
+		font-size: 2.5em;
 	}
 
 	/* center up center image if there is a max-width*/
@@ -200,7 +214,7 @@ footer{
 		/*margin:0 auto;
 		max-width: 1320px;*/
 	}
-
+	
 	/* story style */
 	.bat_story{
 		width:75%;
@@ -239,7 +253,7 @@ footer{
 	}
 	
 	/* make sub heads bigger */
-	.bat_wrap h2{
+	.bat_wrap h3{
 		font-size: 2.25em;
 		font-weight: 400;
 		margin: 3em 0 1em 0;
@@ -279,6 +293,16 @@ footer{
 		url("http://fonts.registerguard.com/miller/headlinelight.svg#web") format("svg");
 	font-style: normal;
 	font-weight: normal;
+}
+
+@font-face {
+	font-family:"RGWeb";
+	src:url("http://fonts.registerguard.com/rg/rgweb.eot");
+	src:url("http://fonts.registerguard.com/rg/rgweb.eot?#iefix") format("embedded-opentype"),
+		url("http://fonts.registerguard.com/rg/rgweb.woff") format("woff"),
+		url("http://fonts.registerguard.com/rg/rgweb.ttf") format("truetype"),
+		url("http://fonts.registerguard.com/rg/rgweb.svg#RGWeb") format("svg");
+	font-weight:normal;font-style:normal;
 }
 /* start of .mm */
 
