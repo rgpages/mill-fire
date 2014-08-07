@@ -29,6 +29,7 @@
 	<meta name="msvalidate.01" content="608AEB9B4D0BDA128921F2615DCC1FCE">
 	
 	<style>
+		
 		.bat_wrap{
 			max-width:1200px;
 		}
@@ -575,7 +576,7 @@
 			 */
 			var scrolledIntoView = function (element) {
 				var coords = element.getBoundingClientRect();
-				return ((coords.top >= 0 && coords.left >= 0 && coords.top) <= (window.innerHeight || document.documentElement.clientHeight));
+				return ((coords.top >= -100 && coords.left >= 0 && coords.top) <= (window.innerHeight || document.documentElement.clientHeight));
 			};
 
 			/*
