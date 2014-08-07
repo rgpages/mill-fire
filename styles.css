@@ -22,7 +22,7 @@ a:active { color: #ca4700; text-decoration: underline; }*/
 	margin:0 auto;
 }
 
-#bat_head{
+.bat_head{
 	display:block;
 	color:#fff;
 	position:absolute;
@@ -32,7 +32,7 @@ a:active { color: #ca4700; text-decoration: underline; }*/
 	padding:0;
 }
 
-#bat_head p{
+.bat_head p{
 	font-size:2.5em;
 	margin:0;
 	padding:.3em;
@@ -204,11 +204,11 @@ footer{
 @media (min-width: 665px) {
 	
 	/* story head */
-	#bat_head {
+	.bat_head {
 		bottom:2em;
 	}
 	
-	#bat_head p {
+	.bat_head p {
 		xfont-size:5em;
 	}
 }
@@ -233,11 +233,11 @@ footer{
 	}
 	
 	/* story head */
-	#bat_head {
+	.bat_head {
 		bottom:0;
 	}
 	
-	#bat_head p{
+	.bat_head p{
 		xfont-size:7.5em;
 	}
 

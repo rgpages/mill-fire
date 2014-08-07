@@ -51,89 +51,64 @@
 			
 		}
 		
+		.bat_break{
+			width: 50%;
+			margin: 4em auto;
+			
+		}
+		
 		/*top stuff*/
 		
-		.bat_paratop { display:none; }
-		
-		.bat_tease_mobile{
-			display: block;
-			width: 100%;
-			margin: 0 auto;
+		.bat_head {
+			position: relative;
 			text-align: center;
+			color: black;
+		}
+		
+		.bat_head h1 {
+			font-size: 4em;
+			margin: 1.5em 0 .5em 0;
+			line-height: .9em;
+			
+		}
+		
+		.bat_head p {
+			margin: 0 auto;
+			font-size: 2em;
+			max-width: 600px;
 			font-style: italic;
 		}
 		
-		.bat_tease_mobile h1{
-			width:100%;
-			font-size: 4em;
-		}
-		
-		.bat_tease_mobile p{
-			font-size: 2em;
-		}
-		
-		.bat_tease_mobile ul{
-			width: 100%;
-			list-style: none;
-			text-align: center;
-			font-variant: small-caps;
-			margin: 0 auto 2em auto;
-			text-align: center;
-			padding: 1em 0 1em 0;
-			background: black;
-
-		}
-		
-		.bat_tease_mobile li{
-			margin: 1em 0 1em 0;
+		.bat_head h2 {
 			font-size: 1.5em;
+			text-decoration: underline;
 		}
 		
-		.bat_tease_mobile a { color: #ccc; text-decoration: none; }
-		.bat_tease_mobile a:visited { color: #aaa }
-		.bat_tease_mobile a:hover { color: white; text-decoration: underline;}
+		.bat_head h2 a { color: black; text-decoration: none; }
+		.bat_head h2 a:visited { color: #333 }
+		.bat_head h2 a:hover { color: black; text-decoration: underline;}
 		
-		@media (min-width: 980px) {
+		.bat_paratop { display: none; }
+		
+		@media (min-width: 980px) { /*desktop*/
 			
-			.bat_tease_mobile{ display: none; }
+			.bat_mobile { display: none; }
 			
-			.bat_paratop{ display: block; }
+			.bat_paratop { display: block; }
 			
-			.bat_tease{
+			.bat_head { 
 				position: absolute;
-				top: 10px;
-				width: 100%;
-				text-align: center;
-				background: none;
-				font-style: italic;
-				color: white;
+				top: 0;
+				margin: .5em 0 0 0;
 			}
 			
-			.bat_tease h1{
-				width:100%;
+			.bat_head h1 { 
 				font-size: 8em;
-				margin: 0;
+				margin: .5em 0 .5em 0;
 			}
 			
-			.bat_tease p{
-				font-size: 2.25em;
-				max-width: 600px;
-				margin: 0 auto 2em auto;
-			}
-			
-			.bat_tease h5{
-				list-style: none;
-				text-align: center;
-				font-variant: small-caps;
-				text-align: center;
-				width: 100%;
-				padding: 0;
-				font-size: 1.75em;
-			}
-			
-			.bat_tease a { color: #ccc; text-decoration: none; }
-			.bat_tease a:visited { color: #999 }
-			.bat_tease a:hover { color: white; text-decoration: underline;}
+			.bat_head h2 { text-decoration: none; }
+
 			
 		}
 		
@@ -145,26 +120,26 @@
 	<!--		HEAD		-->
 	<header id="zeppelin" role="banner">
 		<h6><a href="http://registerguard.com">The Register-Guard</a></h6>
-		<p><a href="#pagetop">Fire</a> | <a href="#one">One</a> | <a href="#two">Two</a> | <a href="#three">Three</a></p>
+		<p><a href="#one">Fire</a> | <a href="#two">Community</a> | <a href="#three">Questions</a></p>
 	</header>
 	<!--		/HEAD		-->
 	
 	<div id="pagetop" class="bat_paratop" data-0="opacity:1" data-2400="opacity:0" style="position:relative">
 		<figure>
-			<img src="media/mill_fire_4007.jpg" width="100%" style="display:block">
-			<div class="bat_tease">
+			<img src="media/mill_fire_5001.jpg" width="100%" style="display:block">
+			<div class="bat_head">
 				<h1>UP IN FLAMES</h1>
 				<p>On July 17, 2014 the Springfield Plywood and Veneer mill burned to the ground leaving about 250 people out of work and a community reeling. Here is the story of that day and those that followed.</p>
 				<div style="width:100%">
-					<h5>
-						<a href="#one">One: The fire</a> | <a href="#two">Two: The community</a> | <a href="#three">Three: Lingering questions</a></li>
-					</h5>
+					<h2>
+						<a href="#one">The fire</a> | <a href="#two">The community</a> | <a href="#three">Lingering questions</a>
+					</h2>
 				</div>
 			</div>
 		</figure>
 	</div>
 	
-	<div class="bat_tease_mobile">
+	<!-- <div class="bat_tease_mobile">
 		<h1>UP IN FLAMES</h1>
 		<p>On July 17, 2014 the Springfield Plywood and Veneer mill burned to the ground leaving about 250 people out of work and a community reeling. Here is the story of that day and those that followed.</p>
 		<div style="width:100%">
@@ -174,9 +149,16 @@
 				<li><a href="#three">Three: Lingering questions</a></li>
 			</ul>
 		</div>
-	</div>
+	</div> -->
 	
-	<div class="bat_full">
+	<div class="bat_full bat_head bat_mobile">
+		<h1>UP IN FLAMES</h1>
+		<p>On July 17, 2014 the Springfield Plywood and Veneer mill burned to the ground leaving about 250 people out of work and a community reeling. Here is the story of that day and those that followed.</p>
+		<div style="width:100%">
+			<h2>
+				<a href="#one">The fire</a><br><a href="#two">The community</a><br><a href="#three">Lingering questions</a>
+			</h2>
+		</div>
 		<figure>
 			<img src="media/mill_fire_21_20140718.jpg" width="100%">
 		</figure>
@@ -185,7 +167,9 @@
 		</figcaption>
 	</div><!-- /.bat_full -->
 	
-	<div class="bat_wrap" id="one">	
+	<hr class="bat_break" id="one">
+	
+	<div class="bat_wrap">	
 		<h1>Fire destroys mill, idles 250 workers</h1>
 		<h2>A neighborhood is evacuated briefly as the fast-moving blaze consumes Springfield Plywood and Veneer</h2>
 		
@@ -341,7 +325,9 @@
 		</figcaption>
 	</div><!-- /.bat_full -->
 	
-	<div class="bat_wrap" id="two">
+	<hr class="bat_break" id="two">
+	
+	<div class="bat_wrap">
 		<h1>Community comes to grips</h1>
 		<h2>Workers: Flames leave most employees disbelieving and jobless</h2>
 		
@@ -462,7 +448,9 @@
 		</div><!-- /.bat_story -->
 	</div><!-- /.bat_wrap -->
 	
-	<div class="bat_wrap" id="three">
+	<hr class="bat_break" id="three">
+	
+	<div class="bat_wrap">
 		<h1>Plant’s owners begin long process of deciding whether to rebuild</h1>
 		
 		<div class="pure-g bat_bydate">
