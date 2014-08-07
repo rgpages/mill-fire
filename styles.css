@@ -2,13 +2,13 @@ body{
 	font-family: Cambria, Georgia, serif;
 }
 
-a:link { color: #64c9ff; text-decoration: none; }
+/*a:link { color: #64c9ff; text-decoration: none; }
 
 a:visited { color: #00517e; text-decoration: none; }
 
 a:hover { color: #ca4700; text-decoration: underline; }
 
-a:active { color: #ca4700; text-decoration: underline; }
+a:active { color: #ca4700; text-decoration: underline; }*/
 
 /* paralax top image */
 .bat_paratop figcaption{
@@ -126,8 +126,8 @@ figcaption{
 
 /* pull quote */
 .bat_quote{
-	border-top: 3px solid black;
-	border-bottom:3px solid black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 	margin: 4%;
 	padding: 4%;
 	color:#444;
@@ -209,7 +209,7 @@ footer{
 	}
 	
 	#bat_head p {
-		font-size:5em;
+		xfont-size:5em;
 	}
 }
 
@@ -238,7 +238,7 @@ footer{
 	}
 	
 	#bat_head p{
-		font-size:7.5em;
+		xfont-size:7.5em;
 	}
 
 	/* center up center image if there is a max-width*/
