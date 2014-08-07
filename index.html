@@ -8,7 +8,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=yes">
 
-	<title>Fire destroys mill, idles 250 workers | News | The Register-Guard | Eugene, Oregon</title>
+	<title>Up in flames | News | The Register-Guard | Eugene, Oregon</title>
 	<meta name="description" content="A neighborhood is evacuated briefly as the fast-moving blaze consumes Springfield Plywood and Veneer">
 	<meta name="keywords" content="fire,mill,groves,springfield,employees,firefighters,south,scene,street,evacuation">
 	
@@ -29,76 +29,113 @@
 	<meta name="msvalidate.01" content="608AEB9B4D0BDA128921F2615DCC1FCE">
 	
 	<style>
+		
 		.bat_wrap{
 			max-width:1200px;
 		}
 		
-		.bat_tease{
+		a { color: #666; text-decoration: none; }
+		a:visited { color: #333 }
+		a:hover { color: black; text-decoration: underline;}
+		
+		@media (min-width: 980px) {
+			
+			.bat_wrap{
+				max-width: 1100px;
+			}
+			
+			.bat_story{
+				width: 65%;
+				line-height: 2em;
+			}
+			
+		}
+		
+		/*top stuff*/
+		
+		.bat_paratop { display:none; }
+		
+		.bat_tease_mobile{
+			display: block;
 			width: 100%;
 			margin: 0 auto;
 			text-align: center;
 			font-style: italic;
 		}
 		
-		.bat_tease h1{
-			color: white;
+		.bat_tease_mobile h1{
 			width:100%;
-			font-size: 5em;
-			background: url(media/mill_fire_4004.jpg) no-repeat;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			-moz-webkit-background-clip: text;
-			-moz-webkit-text-fill-color: transparent;
+			font-size: 4em;
 		}
 		
-		@media (min-width: 665px) {
-			
-			.bat_tease h1{
-				font-size: 8em;
-				color: black;
-				background: white;
-				-webkit-background-clip: border-box;
-				-webkit-text-fill-color: black;
-				-moz-webkit-background-clip: border;
-				-moz-webkit-text-fill-color: black;
-			}
-			
-		}
-		
-		.bat_tease p{
+		.bat_tease_mobile p{
 			font-size: 2em;
 		}
 		
-		.bat_tease ul{
-			/* from https://developer.mozilla.org/en-US/docs/Web/CSS/width */
-			width: intrinsic;           /* Safari/WebKit uses a non-standard name */
-			width: -moz-max-content;    /* Firefox/Gecko */
-			width: -webkit-max-content; /* Chrome */
+		.bat_tease_mobile ul{
+			width: 100%;
 			list-style: none;
 			text-align: center;
 			font-variant: small-caps;
 			margin: 0 auto 2em auto;
-			padding: 0 2em 0 2em;
 			text-align: center;
-			border: solid 1px black;
+			padding: 1em 0 1em 0;
+			background: black;
 
 		}
 		
-		.bat_tease li{
+		.bat_tease_mobile li{
 			margin: 1em 0 1em 0;
 			font-size: 1.5em;
 		}
 		
-		#bd_press{
-			font: .75em Arial, sans-serif;
-			text-transform: uppercase;
-			letter-spacing: .05em;
-			color: #999;
-		}
+		.bat_tease_mobile a { color: #ccc; text-decoration: none; }
+		.bat_tease_mobile a:visited { color: #aaa }
+		.bat_tease_mobile a:hover { color: white; text-decoration: underline;}
 		
-		a { color: #666; text-decoration: none; }
-		a:visited { color: #333 }
-		a:hover { color: black; text-decoration: underline;}
+		@media (min-width: 980px) {
+			
+			.bat_tease_mobile{ display: none; }
+			
+			.bat_paratop{ display: block; }
+			
+			.bat_tease{
+				position: absolute;
+				top: 10px;
+				width: 100%;
+				text-align: center;
+				background: none;
+				font-style: italic;
+				color: white;
+			}
+			
+			.bat_tease h1{
+				width:100%;
+				font-size: 8em;
+				margin: 0;
+			}
+			
+			.bat_tease p{
+				font-size: 2.25em;
+				max-width: 600px;
+				margin: 0 auto 2em auto;
+			}
+			
+			.bat_tease h5{
+				list-style: none;
+				text-align: center;
+				font-variant: small-caps;
+				text-align: center;
+				width: 100%;
+				padding: 0;
+				font-size: 1.75em;
+			}
+			
+			.bat_tease a { color: #ccc; text-decoration: none; }
+			.bat_tease a:visited { color: #999 }
+			.bat_tease a:hover { color: white; text-decoration: underline;}
+			
+		}
 		
 	</style>
 	
@@ -108,60 +145,36 @@
 	<!--		HEAD		-->
 	<header id="zeppelin" role="banner">
 		<h6><a href="http://registerguard.com">The Register-Guard</a></h6>
-		<p><a href="#">FIRE</a> | <a href="#one">ONE</a> | <a href="#two">TWO</a> | <a href="#three">THREE</a></p>
+		<p><a href="#">Fire</a> | <a href="#one">One</a> | <a href="#two">Two</a> | <a href="#three">Three</a></p>
 	</header>
 	<!--		/HEAD		-->
 	
-	<div class="bat_tease">
-		<h1>UP IN FLAMES</h1>
-		<p>On July 17, 2014 the Springfield Plywood and Veneer mill burned to the ground leaving about 250 people out of work and a community reeling. Here is the story of that day and those that followed.</p>
-		<ul>
-			<li style="text-decoration:underline;">Navigation</li>
-			<li><a href="#one">One: The fire</a></li>
-			<li><a href="#two">Two: The community</a></li>
-			<li><a href="#three">Three: Lingering questions</a></li>
-		</ul>
+	<div class="bat_paratop" data-0="opacity:1" data-2400="opacity:0" style="position:relative">
+		<figure>
+			<img src="media/mill_fire_4007.jpg" width="100%" style="display:block">
+			<div class="bat_tease">
+				<h1>UP IN FLAMES</h1>
+				<p>On July 17, 2014 the Springfield Plywood and Veneer mill burned to the ground leaving about 250 people out of work and a community reeling. Here is the story of that day and those that followed.</p>
+				<div style="width:100%">
+					<h5>
+						<a href="#one">One: The fire</a> | <a href="#two">Two: The community</a> | <a href="#three">Three: Lingering questions</a></li>
+					</h5>
+				</div>
+			</div>
+		</figure>
 	</div>
 	
-	<!-- <div class="bat_paratop" data-0="opacity:1" data-2400="opacity:0" style="position:relative">
-		<figure>
-			<img src="media/mill_fire_21_20140718.jpg" width="100%">
-			<div id="bat_head">
-				<p>On July 17, 2014 the Springfield Plywood and Veneer mill burned to the ground</p>
-				<ul>
-					<li>Part I: The fire</li>
-					<li>Part II: The community</li>
-					<li>Part III: Lingering questions</li>
-				</ul>
-			</div>
-		</figure>
-		<figcaption>
-			Eugene/Springfield firefighter Andy Fidino sprays water on veneer at the Springfield Plywood and Veneer mill on Thursday, July 17, 2014. The plant burned to the ground. (Andy Nelson/The Register-Guard)
-		</figcaption>
-	</div> -->
-	
-	<!-- <div class="bat_wrap">
-		<div class="bat_intro">
-			<p>On July 17, 2014 the Springfield Plywood and Veneer mill burned to the ground</p>
+	<div class="bat_tease_mobile">
+		<h1>UP IN FLAMES</h1>
+		<p>On July 17, 2014 the Springfield Plywood and Veneer mill burned to the ground leaving about 250 people out of work and a community reeling. Here is the story of that day and those that followed.</p>
+		<div style="width:100%">
 			<ul>
-				<li>Part I: The fire</li>
-				<li>Part II: The community</li>
-				<li>Part III: Lingering questions</li>
+				<li><a href="#one">One: The fire</a></li>
+				<li><a href="#two">Two: The community</a></li>
+				<li><a href="#three">Three: Lingering questions</a></li>
 			</ul>
 		</div>
-	</div>  --><!-- /.bat_wrap -->
-	
-	<!-- <div class="bat_paratop" data-0="opacity:1" data-2400="opacity:0" style="position:relative">
-		<figure>
-			<img src="media/mill_fire_21_20140718.jpg" width="100%">
-			<div id="bat_head">
-				<p>UP IN FLAMES</p>
-			</div>
-		</figure>
-		<figcaption>
-			Eugene/Springfield firefighter Andy Fidino sprays water on veneer at the Springfield Plywood and Veneer mill on Thursday, July 17, 2014. The plant burned to the ground. (Andy Nelson/The Register-Guard)
-		</figcaption>
-	</div> -->
+	</div>
 	
 	<div class="bat_full">
 		<figure>
@@ -263,7 +276,7 @@
 		<div class="bat_story">
 			<p>The fire spread to two other buildings in the mill complex but those were quickly stamped out, Groves said.</p>
 			<p>A number of spot fires ignited in wildlands to the south of the mill. Firefighters were on the scene with a water line in case any hot spots reignited.</p>
-		</div><!-- /.bat_story -->  
+		</div><!-- /.bat_story -->	
 
 		<!-- full width of wrapper video example -->
 		<div class="bat_media fullwrap">
@@ -410,35 +423,44 @@
 			<p>Tom DeHaven, 60, isn’t so sure he’ll be as fortunate. A ripsaw operator, DeHaven was scheduled to have surgery for carpal tunnel syndrome in his right wrist in the coming weeks. The fate of his health insurance is up in the air now.</p>
 			<p>He left the mill just 30 minutes before the fire started.</p>
 		</div> <!-- /.bat_story -->
-		
-		<div class="bat_quote">
-			<h4>“I got a call from my grandson. He said, ‘Your mill is burning down.’ I hurried back as fast as I could. I couldn’t believe it. It made me sick.”</h4> 
-			<p> - Tom DeHaven</p>
-		</div><!-- /.bat_quote -->
-		
+		</div><!-- /.bat_wrap -->
+	
+	<div class="bat_full">
+		<figure>
+			<img src="media/mill_fire_3001.jpg" width="100%">
+		</figure>
+		<figcaption>
+			Josh Moore, an employee of the Springfield Plywood and Veneer plant in Springfield, Oregon, put his son, Emmett Moore, on his shoulders to get a better view of the fire damage on Friday July 18, 2014. About 250 workers, including Moore, are affected by mill's destruction. (Andy Nelson/The Register-Guard)
+		</figcaption>
+	</div><!-- /.bat_full -->
+	
+	<div class="bat_wrap">
 		<div class="bat_story">
-			<!-- <p>Then, he says, “I got a call from my grandson. He said, ‘Your mill is burning down.’ I hurried back as fast as I could. I couldn’t believe it. It made me sick.”</p> -->
+			<p>Then, he says, “I got a call from my grandson. He said, ‘Your mill is burning down.’ I hurried back as fast as I could. I couldn’t believe it. It made me sick.”</p>
 			<p>DeHaven has worked in mills since the early 1970s, and has seen several fires, “But not like this.” He said he plans to file for unemployment insurance.</p>
 			<p>“It’s been a good company to work for. It’s been real steady,” he said. But, “When a job stops, a mortgage payment and everything else doesn’t. ... When you get to my age, finding another job is going to be really tough.”</p>
 			<p>Many workers wonder whether they’ll find another employer as fair as Swanson.</p>
 			<p>“I’m really nervous right now,” admitted William Suchanek, 34, watching the smoke with other employees. “I don’t know what I’m going to do.”</p>
 			<p>Suchanek, a forklift operator who had been with the company for 18 months, said he had found his “dream job,” one he had wanted to stay on with.</p>
 			<p>The mill was hot and the hours long, but Suchanek and other employees said they enjoyed working at the mill and the company treated them fairly. Jeremy Larsen, 35, another forklift operator, said he was hired six months ago after fighting wildfires for eight years. Larsen said his prior job wasn’t bringing in enough income to support his wife and two-year-old son, but it now offered a fallback option for him.</p>
+		</div> <!-- /.bat_story -->
+		
+		<div class="bat_media">
+			<figure>
+				<img src="media/mill_fire_2003.jpg" width="100%">
+			</figure>
+			<figcaption style="width:70%;margin:0 auto;">
+				Josh Moore, an employee of the Springfield Plywood and Veneer plant in Springfield, Oregon, put his son, Emmett Moore, on his shoulders to get a better view of the fire damage on Friday July 18, 2014. About 250 workers, including Moore, are affected by mill's destruction. (Andy Nelson/The Register-Guard)
+			</figcaption>
+		</div><!-- /.bat_media -->
+		
+		<div class="bat_story">
 			<p>“Depending on what happens, I might go back to fighting wildfires for the summer,” he said.</p>
 			<p>Josh Moore, a 39-year-old press operator who had worked at the mill four years, had called in sick Thursday due to heat exhaustion. He watched the smoke from his backyard near the mill and then evacuated his wife and two children to his parents’ home in the Thurston area.</p>
 			<p>Moore said he’s girding to seek a new job but his outlook remains positive.</p>
 			<p>“Everything happens for a reason,” he said. “I’m a firm believer in my life, and in the past when bad things happen there’s always a reason for it. I usually end up in a better spot for it.”</p>
 		</div><!-- /.bat_story -->
 	</div><!-- /.bat_wrap -->
-	
-	<div class="bat_full">
-		<figure>
-			<img src="media/mill_fire_2003.jpg" width="100%">
-		</figure>
-		<figcaption>
-			Josh Moore, an employee of the Springfield Plywood and Veneer plant in Springfield, Oregon, put his son, Emmett Moore, on his shoulders to get a better view of the fire damage on Friday July 18, 2014. About 250 workers, including Moore, are affected by mill's destruction. (Andy Nelson/The Register-Guard)
-		</figcaption>
-	</div><!-- /.bat_full -->
 	
 	<div class="bat_wrap" id="three">
 		<h1>Plant’s owners begin long process of deciding whether to rebuild</h1>
@@ -514,18 +536,6 @@
 			<p>The mill’s loss shouldn’t disrupt the overall plywood market long-term, but it may cause a bit of a scramble in the short-term, wood products industry experts said.</p>
 			<p>“Western plywood mills were pretty well booked and the market was fairly strong,” said Jon Anderson, publisher of Random Lengths, a wood products trade publication based in Eugene. “I guess it will be kind of a scramble to fill any of the orders that the Swansons aren’t able to fill at their other plant.”</p>
 			<p>Swanson Group overhauled the Springfield mill after buying it in 2007. It upgraded the veneer dryers; the lathe, which spins and peels logs to produce veneer; and the “lathe charging system,” an automated system that optimizes the amount and quality of the veneer.</p>
-		</div> <!-- /.bat_story -->
-		
-		<div class="bat_media">
-			<figure>
-				<img src="media/mill_fire_3001.jpg" width="100%">
-			</figure>
-			<figcaption>
-				Employees of the Springfield Plywood and Veneer plant in Springfield, Oregon gathered in the plant parking lot to view the devastation on Friday July 18, 2014. About 250 workers are affected by mill's destruction. (Andy Nelson/The Register-Guard)
-			</figcaption>
-		</div><!-- /.bat_media -->
-		
-		<div class="bat_story">
 			<p>The mill had gone through a succession of owners, but none had updated the mill much since Georgia-Pacific owned it in the 1960s, Swanson told the Register-Guard in 2008.</p>
 			<p>Swanson “invested millions into it,” Killgore said. “Quite a bit of it was state-of-the-art plywood equipment. They made a significant investment to that facility.”</p>
 			<p>Most mill insurance policies force owners to accept a substantial reduction in benefits if they don’t rebuild, said John Murphy, CEO of Murphy Co., who rebuilt his company’s mill in Sutherlin after it burned in 2005.</p>
@@ -549,6 +559,11 @@
 	
 	<!-- Addthis script -->
 	<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=registerguard"></script>
+	
+	<script>
+	// lazy loader from http://toddmotto.com/echo-js-simple-javascript-image-lazy-loading/
+	// call via <img src="img/album-1.jpg">
+	</script>
 	
 	<!-- [BEGIN] comScore -->
 	<script>var _comscore=_comscore||[];_comscore.push({c1:'2',c2:'14055685'});(function(){var s=document.createElement('script'),el=document.getElementsByTagName('script')[0];s.async=true;s.src=(document.location.protocol=='https:'?'https://sb':'http://b')+'.scorecardresearch.com/beacon.js';el.parentNode.insertBefore(s,el);})();</script>
