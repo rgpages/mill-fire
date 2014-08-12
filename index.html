@@ -580,6 +580,18 @@
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	
+		
+	<script>
+		var device = navigator.userAgent.toLowerCase();
+		var ios = device.match(/(iphone|ipod|ipad)/);
+		if (ios) {
+			$('video').replaceWith("<img src='media/fire_1.png' width='100%'>");
+		}
+		// if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+		// 	$('video').remove();
+		// }
+	</script>
+	
 	<script>
 		$(function() {
 			$('a[href*=#]:not([href=#])').click(function() {
